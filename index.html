@@ -1,0 +1,68 @@
+<!Doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="imagenes/Logo.png" class="logo" alt="Logo de la empresa">
+    </header>
+    
+    <main>
+      <section class="principal">
+
+        <div class="contenedor-texto">
+          <textarea class="texto" placeholder="Escribe el texto a aquí"></textarea>
+        </div>
+
+        <div class ="aviso">
+          <p id="aviso" > Solo letras minusculas y sin acentos</p>
+        </div>
+
+        <div class="contenedor-botones">
+          <button id="encriptar-boton" onclick="encriptar();"class="botones">Encriptar</button>
+          <button id="desencriptar-boton" onclick="desencriptar();"class="botones">Desencriptar</button>
+        </div>
+
+      </section>
+
+      <section class="bloque-flotante">
+        <div class="contenedor-muneco">
+          <img src="imagenes/Muñeco.png" alt = "muneco">
+        </div>
+
+        <div class="contenedor-parrafo">
+          <h3 > Ningún mensaje fue <br> encontrado</h3>
+          <p> Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+        </div>
+
+        <div class = "contenedor-transcripcion">
+          <p class="transcripcion"></p>
+        </div>  
+
+        <div class="contenedor-boton-copiar">
+          <button id="copiar-boton" onclick="copiar();"class="botones">Copiar</button>
+        </div>
+
+      </section>
+
+    </main>
+    
+    <script src="app.js"></script>
+
+    <footer>
+      <p>© 2024. Encriptador de texto. Roger Vera Londoño.</p>
+    </footer>
+  </body>
+
+</html>
+
